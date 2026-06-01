@@ -1,9 +1,10 @@
 import type { NextConfig } from "next";
 import path from "node:path";
 
+const isStaticExport = process.env.STATIC_EXPORT === "true";
+
 const nextConfig: NextConfig = {
-  output: "export",
-  distDir: "build",
+  ...(isStaticExport ? { output: "export", distDir: "build" } : {}),
   turbopack: {
     root: path.join(__dirname),
   },
