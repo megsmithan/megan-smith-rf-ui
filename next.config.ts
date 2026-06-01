@@ -4,7 +4,9 @@ import path from "node:path";
 const isStaticExport = process.env.STATIC_EXPORT === "true";
 
 const nextConfig: NextConfig = {
-  ...(isStaticExport ? { output: "export", distDir: "build" } : {}),
+  ...(isStaticExport
+    ? { output: "export", distDir: "build", assetPrefix: "." }
+    : {}),
   allowedDevOrigins: ["*.csb.app", "*.codesandbox.io"],
   turbopack: {
     root: path.join(__dirname),

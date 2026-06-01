@@ -12,7 +12,7 @@ export default function PageHeader() {
       <div className={styles.identity}>
         <img
           className={styles.logoThumb}
-          src="/icons/logo-mountain.png"
+          src="icons/logo-mountain.png"
           alt="RainFocus Summit"
         />
         <div className={styles.identityText}>

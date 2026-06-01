@@ -11,7 +11,7 @@ export default function RegistrationCard({ card }: RegistrationCardProps) {
       <div className={styles.workflowTitleRow}>
         <img
           className={styles.workflowIcon}
-          src="/icons/logic-arrow.png"
+          src="icons/logic-arrow.png"
           alt=""
           aria-hidden="true"
         />

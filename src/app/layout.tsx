@@ -39,6 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className} suppressHydrationWarning>
       <head>
+        <link rel="icon" href="icons/logo-rf.png" type="image/png" />
         <Script
           id="undo-highlighter-injection"
           strategy="beforeInteractive"

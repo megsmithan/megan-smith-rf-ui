@@ -7,7 +7,7 @@ export default function PortalCard() {
       <div className={styles.portalTitleRow}>
         <img
           className={styles.portalIcon}
-          src="/icons/computer.png"
+          src="icons/computer.png"
           alt=""
           aria-hidden="true"
         />

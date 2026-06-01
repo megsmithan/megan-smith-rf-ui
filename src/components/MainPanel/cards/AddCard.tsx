@@ -15,7 +15,7 @@ export default function AddCard() {
       >
         <img
           className={styles.addIcon}
-          src="/icons/add-circle-outline.png"
+          src="icons/add-circle-outline.png"
           alt=""
           aria-hidden="true"
         />

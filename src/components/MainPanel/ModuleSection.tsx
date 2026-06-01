@@ -11,7 +11,7 @@ export default function ModuleSection() {
       <div className={styles.moduleHeading}>
         <img
           className={styles.moduleIcon}
-          src="/icons/attendee.png"
+          src="icons/attendee.png"
           alt=""
           aria-hidden="true"
         />
