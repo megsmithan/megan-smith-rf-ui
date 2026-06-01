@@ -16,6 +16,26 @@ export default function Sidebar({ onClose }: SidebarProps) {
 
   return (
     <aside className={styles.sidebar}>
+      <button
+        className={styles.closeButton}
+        onClick={onClose}
+        aria-label="Close menu"
+      >
+        <svg
+          className={styles.closeIcon}
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+        >
+          <line x1="6" y1="6" x2="18" y2="18" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+        </svg>
+      </button>
+
       <div className={styles.titleBlock}>
         <span className={styles.title}>RainFocus Summit</span>
         <span className={styles.subtitle}>Lehi, UT • December 15th</span>
@@ -51,26 +71,6 @@ export default function Sidebar({ onClose }: SidebarProps) {
           />
         ))}
       </nav>
-
-      <button
-        className={styles.closeButton}
-        onClick={onClose}
-        aria-label="Close menu"
-      >
-        <svg
-          className={styles.closeIcon}
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          aria-hidden="true"
-        >
-          <polyline points="13 6 7 12 13 18" />
-          <polyline points="19 6 13 12 19 18" />
-        </svg>
-      </button>
     </aside>
   );
 }
