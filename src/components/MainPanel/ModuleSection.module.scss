@@ -1,0 +1,56 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.moduleHeading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.moduleIcon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.moduleTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.stepLabel {
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.stepLabel strong {
+  font-weight: 700;
+}
+
+.workflowGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+
+@media (max-width: 1100px) {
+  .workflowGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .workflowGrid {
+    grid-template-columns: 1fr;
+  }
+}

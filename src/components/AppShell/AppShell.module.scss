@@ -1,0 +1,60 @@
+.shell {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--color-panel);
+}
+
+.drawer {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.menuButton {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .menuButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-sm);
+    background: var(--color-panel);
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+    z-index: 30;
+  }
+
+  .drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    z-index: 50;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .drawerOpen {
+    transform: translateX(0);
+  }
+
+  .backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 40;
+  }
+}
+
+.menuIcon {
+  width: 22px;
+  height: 22px;
+}

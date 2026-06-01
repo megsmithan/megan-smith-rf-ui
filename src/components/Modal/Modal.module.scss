@@ -1,0 +1,40 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: var(--space-4);
+}
+
+.modal {
+  position: relative;
+  background: var(--color-panel);
+  border-radius: var(--radius-md);
+  padding: var(--space-8) var(--space-6);
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-3);
+  font-size: 22px;
+  line-height: 1;
+  color: var(--color-text-muted);
+}
+
+.close:hover {
+  color: var(--color-text);
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text);
+}
